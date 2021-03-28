@@ -4,8 +4,14 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
+import SongList from './components/SongList';
+
 const App = () => {
-  return <div className="ui container"> App </div>;
+  return (
+    <div className="ui container">
+      <SongList />
+    </div>
+  );
 };
 
 const rootDocument = document.querySelector('#root');
