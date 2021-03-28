@@ -7,8 +7,8 @@ class SongList extends Component {
   }
 }
 
-const mapPropsToState = () => {
-  return {};
+const mapStateToProps = (state) => {
+  return { songs: state.songList };
 };
 
-export default connect(mapPropsToState)(SongList);
+export default connect(mapStateToProps)(SongList);
