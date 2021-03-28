@@ -4,9 +4,15 @@ import { connect } from 'react-redux';
 const SongDetail = (props) => {
   return (
     <div>
-      <p>{props.song.title}</p>
-      <p>{props.song.artist}</p>
-      <p>{props.song.duration}</p>
+      <p>
+        Title: <span>{props.song.title}</span>
+      </p>
+      <p>
+        Artist: <span>{props.song.artist}</span>
+      </p>
+      <p>
+        Duration: <span>{props.song.duration}</span>
+      </p>
     </div>
   );
 };
