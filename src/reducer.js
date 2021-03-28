@@ -32,6 +32,6 @@ const songSelectedReducer = (selectedSong = songs[0], action) => {
 };
 
 export default combineReducers({
-  songList: songListReducer,
+  songs: songListReducer,
   songSelected: songSelectedReducer,
 });
